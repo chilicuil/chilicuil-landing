@@ -14,7 +14,7 @@ const tracks = [
   {
     name: 'madoka',
     sub:  'primer sencillo',
-    file: 'audio/MIXBUSS_C_02.wav',
+    file: 'audio/MIXBUSS_C_02.mp3',
   },
   {
     name: 'abue',
