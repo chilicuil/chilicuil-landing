@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chilicuil · abue ep</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Chilicuil</span>
+    <div class="nav-links">
+      <a href="#bio">Bio</a>
+      <a href="#canciones">Canciones</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1 class="ep-name">abue ep</h1>
+    <p class="artist-name">Chilicuil</p>
+    <p class="hero-tagline">A veces abrazar recuerdos no alcanza. Tampoco que el café no sepa a una plática contigo. Esta es la herencia que me dejaste.</p>
+    <div class="cta-row">
+      <button class="btn-primary" onclick="document.getElementById('canciones').scrollIntoView({behavior:'smooth'})">Escuchar</button>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="bio" class="section">
+    <p class="section-label">Bio</p>
+    <h2 class="section-title">Para el abue</h2>
+    <p class="bio-text">
+      <em>abue ep</em> es un proyecto nacido de la memoria y el duelo. Canciones que buscan preservar los recuerdos de quien ya no está: el café que ya no sabe igual, las historias en la sala, la herencia de Elvis, la Fórmula 1 y las Chivas.
+      <br><br>
+      Una ventana que se quedó abierta. Un sofá donde alguien solía narrar grandes aventuras. Música que guarda espacio para los tiliches y enseñanzas de alguien que hace falta.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="quote-block">
+    <p class="quote-text">
+      "Se extraña tu presencia, se extraña el calor de tu voz. Guardo espacio para tus tiliches y enseñanzas. <span>Me hace falta escuchar una vez más que digas Chilicuil. Me gustaría que no fuera la última vez."</span>
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="canciones" class="section">
+    <p class="section-label">Canciones</p>
+    <h2 class="section-title">abue ep</h2>
+
+    <div id="trackList"></div>
+
+    <div class="player-bar">
+      <p class="player-now" id="nowPlaying">— selecciona una canción —</p>
+      <div class="progress-row">
+        <span class="time-label" id="timeCurrent">0:00</span>
+        <div class="progress-bar" id="progressBar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <span class="time-label" id="timeDuration">0:00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="contacto" class="section">
+    <p class="section-label">Contacto</p>
+    <h2 class="section-title">Encuéntranos</h2>
+    <div class="social-links">
+      <a class="social-btn" href="#"><span class="dot" style="background:#1DB954"></span>Spotify</a>
+      <a class="social-btn" href="#"><span class="dot" style="background:#f5b832"></span>Instagram</a>
+      <a class="social-btn" href="#"><span class="dot" style="background:#c96b5a"></span>YouTube</a>
+      <a class="social-btn" href="mailto:tuemail@gmail.com">✉ Contacto</a>
+    </div>
+  </div>
+
+  <div class="footer">Chilicuil · abue ep · 2022</div>
+
+  <audio id="audioPlayer" preload="none"></audio>
+  <script src="player.js"></script>
+
+</body>
+</html>
